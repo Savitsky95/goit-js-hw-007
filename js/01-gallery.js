@@ -28,7 +28,7 @@ galleryList.addEventListener("click", (event) => {
   }
 });
 
-
+// Close instance on Esc key press
 const onEscPress = (event) => {
   const ESC_KEYCODE = "Escape";
   if (event.code === ESC_KEYCODE) {
