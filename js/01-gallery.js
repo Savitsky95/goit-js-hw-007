@@ -13,7 +13,6 @@ const createGalleryItem = ({ preview, original, description }) => `
 
 galleryList.innerHTML = galleryItems.map(createGalleryItem).join("");
 
-// Show corresponding instance when image is clicked
 galleryList.addEventListener("click", (event) => {
   event.preventDefault();
   if (event.target.classList.contains("gallery__image")) {
@@ -28,7 +27,7 @@ galleryList.addEventListener("click", (event) => {
   }
 });
 
-// Close instance on Esc key press
+
 const onEscPress = (event) => {
   const ESC_KEYCODE = "Escape";
   if (event.code === ESC_KEYCODE) {
